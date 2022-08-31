@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    text-decoration: none;
+  }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(169.3deg, #132D46 7.09%, #01C38E 125.72%);
+}
+
+.screen-home{
+
+    width: 428px;
+    height: 926px;
+    background: linear-gradient(169.3deg, #132D46 7.09%, #01C38E 125.72%);
+}
+
+header{
+
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+
+    width: 182px;
+}
+
+.user-search{
+
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   gap: 200px; 
+   margin: 40px 0 20px;
+   align-items: center;
+}
+
+.user a{
+
+    font-size: 30px;
+    color: #01C38E;
+}
+
+input[type="search"]{
+
+    width: 131px;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(253, 255, 255, 0.25);
+}
+
+input::placeholder{
+
+    color: rgba(255, 255, 255, 0.618);
+    font-size: 15px;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+/* ------------ */
+
+.currency-box{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cryptocurrency{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cryptocurrency h1{
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #01C38E;
+    margin-bottom: 25px;
+}
+
+.crypto-card{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 192px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(310deg,
+    hsl(164deg 99% 38%) 0%,
+    hsl(163deg 89% 39%) 0%,
+    hsl(163deg 84% 39%) 1%,
+    hsl(164deg 80% 38%) 2%,
+    hsl(164deg 77% 37%) 4%,
+    rgba(25, 159, 126, 0.984) 6%,
+    rgba(27, 152, 123, 0.964) 9%,
+    rgba(29, 144, 119, 0.931) 13%,
+    rgba(32, 136, 115, 0.907) 18%,
+    rgba(33, 125, 111, 0.885) 24%,
+    rgba(35, 113, 105, 0.854) 32%,
+    rgba(37, 106, 105, 0.814) 43%,
+    rgba(39, 91, 99, 0.792) 60%,
+    rgba(40, 75, 93, 0.747) 100%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 60px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.info-text {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text h3{
+
+    font-size: 16px;
+    font-weight: normal;
+    color: #01c38fdb;
+}
+
+.info-text p{
+
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.848);
+}
+
+.percentage {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.percentage h2{
+
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.percentage p{
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.chart-line img{
+
+    width: 310px;
+}
+
+.your-crypto{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.your-crypto h1{
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #01C38E;
+    margin-bottom: 25px;
+}
+
+.resum-cards{
+
+    width: 374px;
+    height: 336px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-items: center;
+}
+
+.card-btc, .card-eth{
+
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    width: 155px;
+    height: 152px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(110deg,
+    hsl(169deg 85% 40%) 0%,
+    hsl(170deg 86% 37%) 14%,
+    hsl(171deg 86% 34%) 26%,
+    hsl(172deg 87% 31%) 37%,
+    hsl(173deg 88% 28%) 48%,
+    hsl(174deg 89% 25%) 59%,
+    hsl(175deg 89% 22%) 69%,
+    rgba(5, 92, 86, 0.859) 79%,
+    rgba(4, 78, 74, 0.807) 89%,
+    rgba(3, 68, 66, 0.726) 100%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-card{
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    margin: 10px 20px;
+}
+
+.symbol{
+
+    width: 30px;
+    height: 30px;
+    border: solid 1px #01C38E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands{
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.783);
+}
+
+.initials{
+
+    width: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.initials h3{
+
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFF;
+}
+
+.initials p{
+
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.806);
+}
+
+.line img{
+
+    width: 124px;
+}
+
+.market-cap h3{
+
+    font-size: 16px;
+    font-weight: lighter;
+    color: #FFF;
+}
+
+.p-growth{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 31px;
+    border: none;
+    border-radius: 0px 0px 20.59px 20.59px;
+    background: rgba(255, 255, 255, 0.141);
+    backdrop-filter: blur(10px);
+}
+
+.p-growth p{
+
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.81);
+}
+
+/* ------------ */
+
+/*** POPUP ***/
+
+/* === MODAL WRAPPER === */
+
+.wrapper{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.wrapper a{
+    color: rgba(255, 255, 255, 0.81);
+}
+
+/* === MODAL BOX === */
+
+.modal{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77,77,77,0.7);
+    transition: all 0.6s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* === VISIBLE MODAL ON CLICK === */
+
+.modal:target{
+
+    visibility: visible;
+    opacity: 1;
+}
+
+/* === MODAL CONTENTS === */
+
+.modalcontent{ 
+
+    position: relative;
+    width: 350px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    background-image: linear-gradient(110deg,
+    hsl(169deg 85% 40%) 0%,
+    hsl(170deg 86% 37%) 14%,
+    hsl(171deg 86% 34%) 26%,
+    hsl(172deg 87% 31%) 37%,
+    hsl(173deg 88% 28%) 48%,
+    hsl(174deg 89% 25%) 59%,
+    hsl(175deg 89% 22%) 69%,
+    rgba(5, 92, 86, 0.859) 79%,
+    rgba(4, 78, 74, 0.807) 89%,
+    rgba(3, 68, 66, 0.726) 100%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    bottom: -90px;
+}
+
+/* DATA */
+
+.data-btc{
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.price{
+
+    width: 160px;
+}
+
+.price h2{
+
+    font-size: 15px;
+    font-weight: lighter;
+    color: #FFF;
+}
+
+.porcentage{
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+}
+
+.porcentage .fa-solid{
+
+    font-size: 20px;
+    color: #01C38E;
+}
+
+.porcentage p{
+
+    font-size: 15px;
+    font-weight: lighter;
+    color: #01C38E;
+}
+
+/* CHART */
+
+.chart-box{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 25px 0 10px;
+}
+
+.chart img{
+
+    margin: 10px;
+    width: 160px;
+    height: 160px;
+}
+
+.chart-box .fa-solid{
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.742);
+}
+
+/* PROPIEDADES */
+
+.properties{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.procard{
+
+    width: 330px;
+    height: 41px;
+    border: none;
+    margin: 10px 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.procard p{
+
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.592);
+    width: 78px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.procard h2{
+
+    font-size: 15px;
+    font-weight: lighter;
+    color: #FFF;
+    width: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.procard .fa-solid{
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.592);
+    margin: 10px;
+}
+
+.procard .fa-circle-question{
+
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.373);
+    margin: 10px;
+}
+
+/* BOTONES */
+
+.buttons{
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    align-items: center;
+    margin: 15px 10px 15px;
+}
+
+.button-o{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.149);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+}
+
+.button-o:hover{
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.button-o a{
+
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.button-t{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+}
+
+.button-t:hover{
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.button-t a{
+
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+a{
+
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+/* === CLOSE ICON === */
+
+.modalclose{
+
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.511);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/*** POPUP ***/
+
+/* ------------ */
+
+.menu{
+
+    width: 428px;
+    height: 100px;
+    border: none;
+    border-radius: 20px 20px 0 0;
+    background: #132D46;
+    box-shadow: 0px 6px 10px 8px rgba(19, 45, 70, 0.5);
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+}
+
+.button{
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 0;
+    justify-items: center;
+}
+
+.button a{
+
+    width: 41px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    color: #0D5F5E;
+}
+
+.button .active{
+
+    color: #01C38E;
+}
+
+.button:hover{
+
+    color: #01C38E;
+}
+
+.button .fa-solid{
+
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+

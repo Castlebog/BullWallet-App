@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    text-decoration: none;
+  }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(169.3deg, #132D46 7.09%, #01C38E 125.72%);
+}
+
+.screen-nft{
+
+    width: 428px;
+    height: 926px;
+    background: linear-gradient(169.3deg, #132D46 7.09%, #01C38E 125.72%);
+}
+
+header{
+
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+
+    width: 182px;
+}
+
+.user-search{
+
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   gap: 200px; 
+   margin: 40px 0 20px;
+   align-items: center;
+}
+
+.user a{
+
+    font-size: 30px;
+    color: #01C38E;
+}
+
+input[type="search"]{
+
+    width: 131px;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(253, 255, 255, 0.25);
+}
+
+input::placeholder{
+
+    color: rgba(255, 255, 255, 0.618);
+    font-size: 15px;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+/* ------------ */
+
+.nfts-box{
+
+    width: 425px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nfts-box h1{
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #01C38E;
+    margin-bottom: 30px;
+}
+
+.card-box{
+
+    width: 374px;
+    height: 210px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-items: center;
+}
+
+.nft-card{
+
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 210px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(110deg,
+    hsl(169deg 85% 40%) 0%,
+    hsl(170deg 86% 37%) 14%,
+    hsl(171deg 86% 34%) 26%,
+    hsl(172deg 87% 31%) 37%,
+    hsl(173deg 88% 28%) 48%,
+    hsl(174deg 89% 25%) 59%,
+    hsl(175deg 89% 22%) 69%,
+    rgba(5, 92, 86, 0.859) 79%,
+    rgba(4, 78, 74, 0.807) 89%,
+    rgba(3, 68, 66, 0.726) 100%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.img-box{
+
+    width: 160px;
+    height: 110px;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-box img{
+
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nft-info{
+
+   display: grid;
+   grid-template-rows: repeat(3, auto);
+   gap: 15px;
+   justify-items: center;
+   margin: 10px;
+}
+
+.first{
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 59px;
+    align-items: center;
+    justify-items: center;
+}
+
+.first p{
+
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.second{
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 29px;
+    align-items: center;
+    justify-items: center;
+}
+
+.second h2{
+
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.eth{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.eth .fa-brands{
+
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.third{
+
+    display: flex;
+    align-items: center;
+}
+
+.third .fa-solid{
+
+    font-size: 25px;
+    color: #FFF;
+}
+
+.open-sea{
+
+    width: 425px;
+    height: 380px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-sea h1{
+
+    font-size: 20px;
+    font-weight: 400;
+    color: #01C38E;
+    margin-bottom: 30px;
+}
+
+.card-box-o{
+
+    width: 374px;
+    height: 310px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-items: center;
+}
+
+/* ------------ */
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #028e698c;
+    opacity: 0.7;
+    /* box-shadow: inset -2.35533px -2.35533px 5.88833px rgba(77, 84, 138, 0.88), inset 2.35533px 2.35533px 4.71066px #252B56; */
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #028e698c;
+    /* box-shadow: inset -2.35533px -2.35533px 4.71066px #8341DC, inset 2.35533px 2.35533px 4.71066px #8341DC; */
+    border-radius: 10px;
+  }
+
+/* ------------ */
+
+
+/*** POPUP ***/
+
+/* === MODAL WRAPPER === */
+
+.wrapper{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper a{
+    color: #FFF;
+}
+
+/* === MODAL BOX === */
+
+.modal{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77,77,77,0.7);
+    transition: all 0.6s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* === VISIBLE MODAL ON CLICK === */
+
+.modal:target{
+
+    visibility: visible;
+    opacity: 1;
+}
+
+/* === MODAL CONTENTS === */
+
+.modalcontent{ 
+
+    position: relative;
+    width: 350px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    background-image: linear-gradient(110deg,
+    hsl(169deg 85% 40%) 0%,
+    hsl(170deg 86% 37%) 14%,
+    hsl(171deg 86% 34%) 26%,
+    hsl(172deg 87% 31%) 37%,
+    hsl(173deg 88% 28%) 48%,
+    hsl(174deg 89% 25%) 59%,
+    hsl(175deg 89% 22%) 69%,
+    rgba(5, 92, 86, 0.859) 79%,
+    rgba(4, 78, 74, 0.807) 89%,
+    rgba(3, 68, 66, 0.726) 100%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    bottom: -90px;
+}
+
+/* IMAGEN */
+
+.imgbox{
+
+    width: 350px;
+    height: 245px;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgbox img{
+
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.symbol{
+
+    width: 35px;
+    height: 35px;
+    border: solid 1px rgba(255, 255, 255, 0.783);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.symbol .fa-brands{
+
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.783);
+    position: absolute;
+}
+
+.data{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 65px;
+}
+
+.data h1{
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.data h2{
+
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.592);
+    margin-right: 35px;
+}
+
+.data h3{
+
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.592);
+    margin-right: 10px;
+}
+
+.data h4{
+
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.592);
+    margin-right: 10px;
+}
+
+.data .fa-solid{
+
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.592);
+    margin-right: 10px;
+}
+
+.datad{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.datad h2{
+
+    font-size: 15px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.datad p{
+
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.592);
+}
+
+.shre{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.shre .fa-solid{
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.592);
+    margin-right: 10px;
+}
+
+/* PROPIEDADES */
+
+.properties{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.procard{
+
+    width: 330px;
+    height: 41px;
+    border: none;
+    margin: 5px 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.procard p{
+
+    font-size: 15px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.592);
+    width: 225px;
+}
+
+.procard .fa-solid{
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.592);
+    margin: 10px;
+}
+
+/* BOTONES */
+
+.buttons{
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    align-items: center;
+    margin: 15px 10px 15px;
+}
+
+.button-o{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.149);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+}
+
+.button-o:hover{
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.button-o a{
+
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.button-t{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+}
+
+.button-t:hover{
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.button-t a{
+
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+a{
+
+    font-size: 25px;
+}
+
+/* === CLOSE ICON === */
+
+.modalclose{
+
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.511);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/*** POPUP ***/
+
+/* ------------ */
+
+.menu{
+
+    width: 428px;
+    height: 100px;
+    border: none;
+    border-radius: 20px 20px 0 0;
+    background: #132D46;
+    box-shadow: 0px 6px 10px 8px rgba(19, 45, 70, 0.5);
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+}
+
+.button{
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 0;
+    justify-items: center;
+}
+
+.button a{
+
+    width: 41px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    color: #0D5F5E;
+}
+
+.button .active{
+
+    color: #01C38E;
+}
+
+.button:hover{
+
+    color: #01C38E;
+}
+
+.button .fa-solid{
+
+    font-size: 25px;
+    margin: 10px;
+}
